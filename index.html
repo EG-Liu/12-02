@@ -4,10 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="assets/ico/favicon.png">
+	<meta name="author" content="">
+	<!--
+	<link rel="shortcut icon" href="assets/ico/favicon.png">
+	-->
 
-    <title>MINIMAL - Free Bootstrap 3 Theme</title>
+    <title>刘雅宝——生平大事记</title>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
@@ -16,9 +18,12 @@
     <link href="assets/css/main.css" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
 
+	<link href="ihover.css" rel="stylesheet">
+
     <script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/modernizr.custom.js"></script>
-	
+
+	<script src="mp3.js"></script>
 
 	
     <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
@@ -28,40 +33,59 @@
     <!--[if lt IE 9]>
       <script src="assets/js/html5shiv.js"></script>
       <script src="assets/js/respond.min.js"></script>
-    <![endif]-->
+	<![endif]-->
+	
+	<style>
+		.ih-item.circle .img {
+  width: 180px;
+  height: 180px;
+}
+.ih-item.circle {
+  position: absolute;
+  top: 0px;
+  left: 00px;
+  width: 180px;
+  height: 180px;
+}
+	</style>
   </head>
 
   <body data-spy="scroll" data-offset="0" data-target="#theMenu">
 		
-	<!-- Menu -->
-	<nav class="menu" id="theMenu">
+<!-- Menu -->
+<nav class="menu" id="theMenu">
 		<div class="menu-wrap">
-			<h1 class="logo"><a href="index.html#home">Minimal</a></h1>
+			<h1 class="logo"><a href="index.html#home">刘雅宝</a></h1>
 			<i class="icon-remove menu-close"></i>
-			<a href="#home" class="smoothScroll">Home</a>
-			<a href="#about" class="smoothScroll">About</a>
-			<a href="#portfolio" class="smoothScroll">Portfolio</a>
-			<a href="#contact" class="smoothScroll">Contact</a>
-			<a href="#"><i class="icon-facebook"></i></a>
-			<a href="#"><i class="icon-twitter"></i></a>
-			<a href="#"><i class="icon-dribbble"></i></a>
-			<a href="#"><i class="icon-envelope"></i></a>
+			<a href="#home" class="smoothScroll">主页</a>
+			<a href="#about" class="smoothScroll">个人简介</a>
+			<a href="#portfolio" class="smoothScroll">图库</a>
+			<a href="#contact" class="smoothScroll">联系方式</a>
 		</div>
 		
 		<!-- Menu button -->
 		<div id="menuToggle"><i class="icon-reorder"></i></div>
 	</nav>
 
+	<div class="ih-item circle effect15 left_to_right header-circle">
+			<a href="#">
+			  <div class="img">
+				<img src="assets/img/music box.jpg" alt="7"/>
+			  </div>
+			  <div class="info">
+				<h3>音乐盒</h3>
+				<p class="start-misic" style="display: block;">点击播放</p >
+				<p class="stop-misic" style="display: none;">点击暂停</p >
+			  </div>
+			</a >
+	</div>
+		  <audio loop="loop" class="audio-tag" type="audio/mpeg" src="assets/remember_me.mp3" ></audio>
 
-	
 	<!-- ========== HEADER SECTION ========== -->
 	<section id="home" name="home"></section>
+	
 	<div id="headerwrap">
 		<div class="container">
-			<div class="logo">
-				<img src="assets/img/logo.png">
-			</div>
-			<br>
 			<div class="row">
 				<h1>刘雅宝</h1>
 				<br>
@@ -103,178 +127,178 @@
 	<section id="portfolio" name="portfolio"></section>
 	<div id="f">
 		<div class="container">
-			<div class="image" style="width:40%;display:inline-block; position:relative">
+			<div class="image" style="width:40%;display:inline-block;position:relative;vertical-align:middle">
 				<img class="img-responsive" src="assets/img/1.jpg">
 			</div>
-			<div class="text" style="width:40%;display:inline-block;position:relative;bottom:129px">
-				<h3>2017-01-06：接回家</h3>
+			<div class="text" style="width:40%;display:inline-block;position:relative;vertical-align:middle">
+				<h3>2017-01-06<br><br>接回家</h3>
 			</div>	
 	
-			<div class="text" style="width:40%;display:inline-block;position:relative;bottom:189px">
+			<div class="text" style="width:40%;display:inline-block;position:relative;vertical-align:middle">
 				<h3>偷喝水</h3>
 			</div>	
-			<div class="image" style="width:40%;display:inline-block; position:relative">
+			<div class="image" style="width:40%;display:inline-block; position:relative;vertical-align:middle">
 				<img class="img-responsive" src="assets/img/2.jpg">
 			</div>
 		
-			<div class="image" style="width:40%;display:inline-block; position:relative">
+			<div class="image" style="width:40%;display:inline-block; position:relative;vertical-align:middle">
 				<img class="img-responsive" src="assets/img/3.jpg">
 			</div>
-			<div class="text" style="width:40%;display:inline-block;position:relative;bottom:150px">
+			<div class="text" style="width:40%;display:inline-block;position:relative;vertical-align:middle">
 				<h3>学会上厕所</h3>
 			</div>	
 		
-			<div class="text" style="width:40%;display:inline-block;position:relative;bottom:189px">
-				<h3>第一次洗澡<br>红了眼眶</h3>
+			<div class="text" style="width:40%;display:inline-block;position:relative;vertical-align:middle">
+				<h3>第一次洗澡<br><br>红了眼眶</h3>
 			</div>	
-			<div class="image" style="width:40%;display:inline-block; position:relative">
+			<div class="image" style="width:40%;display:inline-block;position:relative;vertical-align:middle">
 				<img class="img-responsive" src="assets/img/4.jpg">
 			</div>
 		
-			<div class="image" style="width:40%;display:inline-block; position:relative">
+			<div class="image" style="width:40%;display:inline-block;position:relative;vertical-align:middle">
 				<img class="img-responsive" src="assets/img/4a.jpg">
 			</div>
-			<div class="text" style="width:40%;display:inline-block;position:relative;bottom:150px">
+			<div class="text" style="width:40%;display:inline-block;position:relative;vertical-align:middle">
 				<h3>生性放荡</h3>
 			</div>	
 		
-			<div class="text" style="width:40%;display:inline-block;position:relative;bottom:189px">
+			<div class="text" style="width:40%;display:inline-block;position:relative;vertical-align:middle">
 				<h3>面临喵生的大选择</h3>
 			</div>	
-			<div class="image" style="width:40%;display:inline-block; position:relative">
+			<div class="image" style="width:40%;display:inline-block;position:relative;vertical-align:middle">
 				<img class="img-responsive" src="assets/img/4b.jpg">
 			</div>
 				
-			<div class="image" style="width:40%;display:inline-block; position:relative">
+			<div class="image" style="width:40%;display:inline-block;position:relative;vertical-align:middle">
 				<img class="img-responsive" src="assets/img/5.jpg">
 			</div>
-			<div class="text" style="width:40%;display:inline-block;position:relative;bottom:150px">
+			<div class="text" style="width:40%;display:inline-block;position:relative;vertical-align:middle">
 				<h3>被小姐姐撸</h3>
 			</div>	
 			
-			<div class="text" style="width:40%;display:inline-block;position:relative;bottom:189px">
+			<div class="text" style="width:40%;display:inline-block;position:relative;vertical-align:middle">
 				<h3>打完疫苗很虚弱</h3>
 			</div>	
-			<div class="image" style="width:40%;display:inline-block; position:relative">
+			<div class="image" style="width:40%;display:inline-block;position:relative;vertical-align:middle">
 				<img class="img-responsive" src="assets/img/6.jpg">
 			</div>
 			
-			<div class="image" style="width:40%;display:inline-block; position:relative">
+			<div class="image" style="width:40%;display:inline-block;position:relative;vertical-align:middle">
 				<img class="img-responsive" src="assets/img/7.jpg">
 			</div>
-			<div class="text" style="width:40%;display:inline-block;position:relative;bottom:150px">
+			<div class="text" style="width:40%;display:inline-block;position:relative;vertical-align:middle">
 				<h3>维密天使</h3>
 			</div>	
 		
-			<div class="text" style="width:40%;display:inline-block;position:relative;bottom:189px">
+			<div class="text" style="width:40%;display:inline-block;position:relative;vertical-align:middle">
 				<h3>妈妈抱着粗去玩</h3>
 			</div>	
-			<div class="image" style="width:40%;display:inline-block; position:relative">
+			<div class="image" style="width:40%;display:inline-block;position:relative;vertical-align:middle">
 				<img class="img-responsive" src="assets/img/8.jpg">
 			</div>
 			
-			<div class="image" style="width:40%;display:inline-block; position:relative">
+			<div class="image" style="width:40%;display:inline-block;position:relative;vertical-align:middle">
 				<img class="img-responsive" src="assets/img/9.jpg">
 			</div>
-			<div class="text" style="width:40%;display:inline-block;position:relative;bottom:150px">
+			<div class="text" style="width:40%;display:inline-block;position:relative;vertical-align:middle">
 				<h3>粉嫩的新胸牌</h3>
 			</div>	
 		
-			<div class="text" style="width:40%;display:inline-block;position:relative;bottom:189px">
+			<div class="text" style="width:40%;display:inline-block;position:relative;vertical-align:middle">
 				<h3>新抓柱 新玩具</h3>
 			</div>	
-			<div class="image" style="width:40%;display:inline-block; position:relative">
+			<div class="image" style="width:40%;display:inline-block;position:relative;vertical-align:middle">
 				<img class="img-responsive" src="assets/img/10.jpg">
 			</div>
 		
-			<div class="image" style="width:40%;display:inline-block; position:relative">
+			<div class="image" style="width:40%;display:inline-block;position:relative;vertical-align:middle">
 				<img class="img-responsive" src="assets/img/11.jpg">
 			</div>
-			<div class="text" style="width:40%;display:inline-block;position:relative;bottom:150px">
-				<h3>2017-04-02：半岁生日~割蛋啦！</h3>
+			<div class="text" style="width:40%;display:inline-block;position:relative;vertical-align:middle">
+				<h3>2017-04-02<br><br>半岁生日~割蛋啦！</h3>
 			</div>	
 			
-			<div class="text" style="width:40%;display:inline-block;position:relative;bottom:189px">
+			<div class="text" style="width:40%;display:inline-block;position:relative;vertical-align:middle">
 				<h3>不想刷牙</h3>
 			</div>	
-			<div class="image" style="width:40%;display:inline-block; position:relative">
+			<div class="image" style="width:40%;display:inline-block;position:relative;vertical-align:middle">
 				<img class="img-responsive" src="assets/img/12.jpg">
 			</div>
 		
-			<div class="image" style="width:40%;display:inline-block; position:relative">
+			<div class="image" style="width:40%;display:inline-block;position:relative;vertical-align:middle">
 				<img class="img-responsive" src="assets/img/13.jpg">
 			</div>
-			<div class="text" style="width:40%;display:inline-block;position:relative;bottom:150px">
-				<h3>爱上一只小奶牛<br>可惜我已没有蛋</h3>
+			<div class="text" style="width:40%;display:inline-block;position:relative;vertical-align:middle">
+				<h3>爱上一只小奶牛<br><br>可惜我已没有蛋</h3>
 			</div>	
 			
-			<div class="text" style="width:40%;display:inline-block;position:relative;bottom:189px">
+			<div class="text" style="width:40%;display:inline-block;position:relative;vertical-align:middle">
 				<h3>只好借酒消愁</h3>
 			</div>	
-			<div class="image" style="width:40%;display:inline-block; position:relative">
+			<div class="image" style="width:40%;display:inline-block;position:relative;vertical-align:middle">
 				<img class="img-responsive" src="assets/img/14.jpg">
 			</div>
 			
-			<div class="image" style="width:40%;display:inline-block; position:relative">
+			<div class="image" style="width:40%;display:inline-block; position:relative;vertical-align:middle">
 				<img class="img-responsive" src="assets/img/15.jpg">
 			</div>
-			<div class="text" style="width:40%;display:inline-block;position:relative;bottom:150px">
+			<div class="text" style="width:40%;display:inline-block;position:relative;vertical-align:middle">
 				<h3>但我依旧热爱磨牙…</h3>
 			</div>	
 			
-			<div class="text" style="width:40%;display:inline-block;position:relative;bottom:189px">
+			<div class="text" style="width:40%;display:inline-block;position:relative;vertical-align:middle">
 				<h3>…和遛鸟</h3>
 			</div>	
-			<div class="image" style="width:40%;display:inline-block; position:relative">
+			<div class="image" style="width:40%;display:inline-block; position:relative;vertical-align:middle">
 				<img class="img-responsive" src="assets/img/16.jpg">
 			</div>
 			
-			<div class="image" style="width:40%;display:inline-block; position:relative">
+			<div class="image" style="width:40%;display:inline-block; position:relative;vertical-align:middle">
 				<img class="img-responsive" src="assets/img/17.jpg">
 			</div>
-			<div class="text" style="width:40%;display:inline-block;position:relative;bottom:150px">
+			<div class="text" style="width:40%;display:inline-block;position:relative;vertical-align:middle">
 				<h3>每天吃吃喝喝</h3>
 			</div>	
 		
-			<div class="text" style="width:40%;display:inline-block;position:relative;bottom:189px">
+			<div class="text" style="width:40%;display:inline-block;position:relative;vertical-align:middle">
 				<h3>看看窗外的小麻雀</h3>
 			</div>	
-			<div class="image" style="width:40%;display:inline-block; position:relative">
+			<div class="image" style="width:40%;display:inline-block; position:relative;vertical-align:middle">
 				<img class="img-responsive" src="assets/img/18.jpg">
 			</div>
 		
-			<div class="image" style="width:40%;display:inline-block; position:relative">
+			<div class="image" style="width:40%;display:inline-block; position:relative;vertical-align:middle">
 				<img class="img-responsive" src="assets/img/19.jpg">
 			</div>
-			<div class="text" style="width:40%;display:inline-block;position:relative;bottom:150px">
-				<h3>2017-10-02<br>不知不觉就一岁啦</h3>
+			<div class="text" style="width:40%;display:inline-block;position:relative;vertical-align:middle">
+				<h3>2017-10-02<br><br>不知不觉就一岁啦</h3>
 			</div>	
 			
-			<div class="text" style="width:40%;display:inline-block;position:relative;bottom:189px">
-				<h3>我去拍了写真</h3>
+			<div class="text" style="width:40%;display:inline-block;position:relative;vertical-align:middle">
+				<h3>还（被迫）去拍了写真</h3>
 			</div>	
-			<div class="image" style="width:40%;display:inline-block; position:relative">
+			<div class="image" style="width:40%;display:inline-block; position:relative;vertical-align:middle">
 				<img class="img-responsive" src="assets/img/20.jpg">
 			</div>
 		
-			<div class="image" style="width:40%;display:inline-block; position:relative">
+			<div class="image" style="width:40%;display:inline-block; position:relative;vertical-align:middle">
 				<img class="img-responsive" src="assets/img/21.jpg">
 			</div>
-			<div class="text" style="width:40%;display:inline-block;position:relative;bottom:150px">
+			<div class="text" style="width:40%;display:inline-block;position:relative;vertical-align:middle">
 				<h3>……</h3>
 			</div>	
 			
-			<div class="text" style="width:40%;display:inline-block;position:relative;bottom:189px">
-				<h3>总而言之<br>让我们在新的一年里<br>越长越胖吧</h3>
+			<div class="text" style="width:40%;display:inline-block;position:relative;vertical-align:middle">
+				<h3>总而言之<br><br>让我们在新的一年里<br><br>越长越胖吧</h3>
 			</div>	
-			<div class="image" style="width:40%;display:inline-block; position:relative">
+			<div class="image" style="width:40%;display:inline-block; position:relative;vertical-align:middle">
 				<img class="img-responsive" src="assets/img/22.jpg">
 			</div>
 
-			<div class="image" style="width:40%;display:inline-block; position:relative">
+			<div class="image" style="width:40%;display:inline-block; position:relative;vertical-align:middle">
 				<img class="img-responsive" src="assets/img/23.jpg">
 			</div>
-			<div class="text" style="width:40%;display:inline-block;position:relative;bottom:150px">
+			<div class="text" style="width:40%;display:inline-block;position:relative;vertical-align:middle">
 				<h3>笔芯~</h3>
 			</div>	
 		<div><!-- container -->
@@ -291,8 +315,8 @@
 				<div class="col-lg-6 col-lg-offset-3">
 					<p>请联系我妈妈/经纪人<br/>或在我家楼下堵截</p>
 					<p>请务必带上吃的</p>
-					<p>我喜欢肉干，谢谢</p>
-					<a class="btn btn-warning" href="https://www.taobao.com">点击购买肉干 </a>
+					<p>我喜欢小鱼干，谢谢</p>
+					<a class="btn btn-warning" href="https://www.taobao.com">点击购买小鱼干 </a>
 				</div>
 			</div>
 		</div>
