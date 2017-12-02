@@ -42,8 +42,8 @@
 }
 .ih-item.circle {
   position: absolute;
-  top: 0px;
-  left: 00px;
+  top: 10px;
+  left: 10px;
   width: 180px;
   height: 180px;
 }
@@ -57,10 +57,10 @@
 		<div class="menu-wrap">
 			<h1 class="logo"><a href="index.html#home">刘雅宝</a></h1>
 			<i class="icon-remove menu-close"></i>
-			<a href="#home" class="smoothScroll">主页</a>
-			<a href="#about" class="smoothScroll">个人简介</a>
-			<a href="#portfolio" class="smoothScroll">图库</a>
-			<a href="#contact" class="smoothScroll">联系方式</a>
+			<a href="#home" class="smoothScroll" id="home_button">主页</a>
+			<a href="#about" class="smoothScroll" id="about_button">个人简介</a>
+			<a href="#portfolio" class="smoothScroll" id="portfolio_button">图库</a>
+			<a href="#contact" class="smoothScroll" id="contact_button">联系方式</a>
 		</div>
 		
 		<!-- Menu button -->
@@ -131,7 +131,7 @@
 				<img class="img-responsive" src="assets/img/1.jpg">
 			</div>
 			<div class="text" style="width:40%;display:inline-block;position:relative;vertical-align:middle">
-				<h3>2017-01-06<br><br>接回家</h3>
+				<h3>2017-01-06<br><br>回家啦j</h3>
 			</div>	
 	
 			<div class="text" style="width:40%;display:inline-block;position:relative;vertical-align:middle">
@@ -316,7 +316,7 @@
 					<p>请联系我妈妈/经纪人<br/>或在我家楼下堵截</p>
 					<p>请务必带上吃的</p>
 					<p>我喜欢小鱼干，谢谢</p>
-					<a class="btn btn-warning" href="https://www.taobao.com">点击前往马爸爸家购买小鱼干 </a>
+					<a class="btn btn-warning" href="https://www.taobao.com">点击前往马爸爸家购买小鱼干</a>
 				</div>
 			</div>
 		</div>
@@ -331,5 +331,34 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/smoothscroll.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
 </body>
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#home_button").click(function() {
+        $("html, body").animate({
+            scrollTop: $("#home").offset().top }, {duration: 500,easing: "swing"});
+        return false;
+    });
+    $("#about_button").click(function() {
+        $("html, body").animate({
+            scrollTop: $("#about").offset().top }, {duration: 500,easing: "swing"});
+        return false;
+    });
+    $("#portfolio_button").click(function() {
+        $("html, body").animate({
+            scrollTop: $("#portfolio").offset().top }, {duration: 500,easing: "swing"});
+        return false;
+	});
+	$("#contact_button").click(function() {
+        $("html, body").animate({
+            scrollTop: $("#contact").offset().top }, {duration: 500,easing: "swing"});
+        return false;
+    });
+});
+
+</script>
+
 </html>
